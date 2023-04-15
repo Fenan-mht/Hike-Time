@@ -1,0 +1,898 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: poppins;
+}
+.allcontent {
+	width: 100%;
+	
+}
+.container {
+	background-image: linear-gradient(rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 1)), url(herobg.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 20px;	
+	
+}
+.subcontainer {
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.logo_w{
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	text-align: end;
+	width: 15%;
+}
+.logo_w div {
+	width: 50%;
+	color: aliceblue;
+	text-align: center;
+	margin: auto;
+}
+.logo {
+	width: 15%;
+	
+}
+.navs ul {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	list-style: none;
+	color: white;
+}
+.navs li {
+	cursor: pointer;
+}
+.navs li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+hr{
+	border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.menuicon{
+	display: none;
+	width: 25px;
+	height: 25px;
+	float: right;
+}
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+}
+.writing_section {
+	margin-top: 15%;
+	margin-bottom: 20%;
+}
+.writing_section h1 {
+	font-size: 700%;
+	
+}
+.hero_footer {
+	display: flex;
+	flex-direction: row;
+	gap: 12rem;
+	margin-bottom: 30px;
+}
+.writing_footerI{
+	display: flex;
+	flex-direction: row;
+	font-size: medium;
+}
+.writing_footerI img {
+	width: 40px;
+	height: 40px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.butcon {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	margin: auto;
+	position: relative;
+}
+.butcon button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	margin: auto;
+	color: white;
+}
+
+.hero_f_div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.popular_container {
+	background-color: rgba(30, 30, 30, 1);
+	padding: 20px;
+}
+.popular{
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin-right: 100px;
+	margin-left: 100px;
+	color: white;
+}
+.popular_text{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.popular_pics {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+}
+.popular_img {
+	margin: auto;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.popularimg4{
+	width: 90%;
+	border-radius: 7px;
+	filter: brightness(40%);
+	box-shadow: 2px 3px wheat;
+}
+.popularimg3 {
+	width: 80%;
+	border-radius: 7px;
+	filter: brightness(40%);
+}
+.popularimg2 {
+	width: 65%;
+	border-radius: 7px;
+	filter: brightness(40%);
+}
+.popularimg1{
+	width: 70%;
+	border-radius: 7px;
+	filter: brightness(40%);
+}
+.popimg_text {
+	 
+	position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.discover_container {
+	padding: 20px;
+	background-image: linear-gradient(rgba(30, 30, 30, 1), rgba(30, 30, 30, 0.2)), url(discoverbg.jpg); 
+	background-position: center;
+	background-size: cover;
+	color: white;
+} 
+.discover {
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;	
+	margin-top: 15%;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.disctextandvid{
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+}
+.discover_text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.discover_text h1 {
+	font-size: 400%;
+}
+.watch{
+	display: flex;
+	flex-direction: row;
+	
+}
+.playbutton {
+	width: 80px;
+}
+.watch div {
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 125%;
+}
+.discover_text p {
+	font-size: medium;
+}
+.discover_video{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	margin-top: auto;
+}
+.discover_footer{
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	margin: auto;
+}
+.discover_social {
+	width: 5%;
+	margin: auto;
+}
+@media only screen and (max-width: 600px) {
+	.allcontent {
+		width: 100%;
+	}
+	.logo_w{
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		text-align: end;
+		width: 40%;
+		
+	}
+	.logo_w div {
+		width: 80%;
+		color: aliceblue;
+		text-align: center;
+		margin: auto;
+	}
+	.navs ul {
+		display: none;
+	}
+	.menuicon{
+		display: block;
+	}
+	.writing_section {
+		margin-top: 35%;
+		margin-bottom: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.writing_section h1 {
+		font-size: 300%;	
+	}
+	.writing_section p {
+		font-size: small;
+	}
+	.writing_footerI{
+		display: flex;
+		flex-direction: row;
+		font-size: small;
+	}
+	.hero_footer {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.butcon {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		margin: auto;
+		
+	}
+	.butcon button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		
+		color: white;
+	}
+	.popular_text p {
+		font-size: medium;
+	}
+	.popular_pics{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.popularimg4{
+		width: 50%;
+	}
+	.popularimg3{
+		width: 50%;
+	}
+	.popularimg2{
+		width:45%
+	}
+	.popularimg1{
+		width: 50%;
+	}
+	.popimg_text{
+		font-size: small;
+	}
+	.disctextandvid{
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.discover_text h1{
+		font-size: 200%;
+	}
+	.discover_video{
+		display: flex;
+		flex-direction: column;
+	}
+	.discover_social{
+		width: 10%;
+	}	
+}
+@media only screen and (min-width: 600px) {
+	.allcontent {
+		width: 100%;
+	}
+	.logo_w{
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		text-align: end;
+		width: 40%;
+		
+	}
+	.logo_w div {
+		width: 80%;
+		color: aliceblue;
+		text-align: center;
+		margin: auto;
+	}
+	.navs ul {
+		display: none;
+	}
+	.menuicon{
+		display: block;
+	}
+	.writing_section {
+		margin-top: 35%;
+		margin-bottom: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.writing_section h1 {
+		font-size: 300%;	
+	}
+	.writing_section p {
+		font-size: small;
+	}
+	.writing_footerI{
+		display: flex;
+		flex-direction: row;
+		font-size: small;
+	}
+	.hero_footer {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.butcon {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		margin: auto;
+		
+	}
+	.butcon button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		
+		color: white;
+	}
+	.popular_text p {
+		font-size: medium;
+	}
+	.popular_pics{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.popularimg4{
+		width: 50%;
+	}
+	.popularimg3{
+		width: 50%;
+	}
+	.popularimg2{
+		width:45%
+	}
+	.popularimg1{
+		width: 50%;
+	}
+	.popimg_text{
+		font-size: small;
+	}
+	.disctextandvid{
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.discover_text h1{
+		font-size: 200%;
+	}
+	.discover_video{
+		display: flex;
+		flex-direction: column;
+	}
+	.discover_social{
+		width: 10%;
+	}	
+}
+@media only screen and (min-width: 768px) {
+	.allcontent {
+		width: 100%;
+	}
+	.logo_w{
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		text-align: end;
+		width: 40%;
+	}
+	.logo_w div {
+		width: 30%;
+		color: white;
+		text-align: center;
+		margin: auto;
+	}
+	.navs ul {
+		display: none;
+	}
+	.menuicon{
+		display: block;
+		width: 35px;
+		height: 35px;
+	}
+	.writing_section {
+		margin-top: 35%;
+		margin-bottom: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.writing_section h1 {
+		font-size: 600%;	
+	}
+	.writing_section p {
+		font-size: medium;
+	}
+	.writing_footerI{
+		display: flex;
+		flex-direction: row;
+		font-size: medium;
+	}
+	.hero_footer {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.butcon {
+		display: flex;
+		flex-direction: row;
+		width: 70%;
+		margin: auto;
+		
+	}
+	.butcon button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		
+		color: white;
+	}
+	.popular_text p {
+		font-size: medium;
+	}
+	.popular_pics{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.popularimg4{
+		width: 40%;
+	}
+	.popularimg3{
+		width: 40%;
+	}
+	.popularimg2{
+		width:35%
+	}
+	.popularimg1{
+		width: 40%;
+	}
+	.popimg_text{
+		font-size: medium;
+	}
+	.disctextandvid{
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.discover_text h1{
+		font-size: 400%;
+	}
+	.discover_video{
+		display: flex;
+		flex-direction: row;
+	}
+	.discover_social{
+		width: 8%;
+	}	
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.allcontent {
+		width: 100%;
+	}
+	.logo_w{
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		text-align: end;
+		width: 40%;
+		
+	}
+	.logo_w div {
+		width: 70%;
+		color: aliceblue;
+		text-align: center;
+		margin: auto;
+		font-size: 150%;
+	}
+	.navs ul {
+		display: none;
+	}
+	.menuicon{
+		display: block;
+		width: 45px;
+		height: 45px;
+	}
+	.writing_section {
+		margin-top: 35%;
+		margin-bottom: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.writing_section h1 {
+		font-size: 900%;	
+	}
+	.writing_section p {
+		font-size: x-large;
+	}
+	.writing_footerI{
+		display: flex;
+		flex-direction: row;
+		font-size: x-large;
+	}
+	.hero_footer {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.butcon {
+		display: flex;
+		flex-direction: row;
+		width: 70%;
+		margin: auto;
+		
+	}
+	.butcon button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		
+		color: white;
+	}
+	.popular_text h3 {
+		font-size: xx-large;
+	}
+	.popular_text p {
+		font-size: large;
+	}
+	.popular_pics{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.popularimg4{
+		width: 40%;
+	}
+	.popularimg3{
+		width: 40%;
+	}
+	.popularimg2{
+		width:35%
+	}
+	.popularimg1{
+		width: 40%;
+	}
+	.popimg_text{
+		font-size: medium;
+	}
+	.disctextandvid{
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.discover_text h1{
+		font-size: 700%;
+	}
+	.watch div {
+		font-size: 150%;
+	}
+	.watch p {
+		font-size: xx-large;
+	}
+	.discover_video{
+		display: flex;
+		flex-direction: row;
+	}
+	.discover_social{
+		width: 8%;
+	}	
+}
+@media only screen and (min-width: 1200px) {
+	.allcontent {
+		width: 100%;
+		
+	}
+	.container {
+		background-image: linear-gradient(rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 1)), url(herobg.jpg);
+		background-position: center;
+		background-size: cover;
+		padding: 20px;	
+		
+	}
+	.subcontainer {
+		margin-right: 100px;
+		margin-left: 100px;
+		margin-top: 30px;
+	}
+	.navbar{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+	.logo_w{
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		text-align: end;
+		width: 20%;
+	}
+	.logo_w div {
+		width: 40%;
+		color: aliceblue;
+		text-align: center;
+		margin: auto;
+		font-size: 100%;
+	}
+	.logo {
+		width: 10%;
+		
+	}
+	.navs ul {
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+		list-style: none;
+		color: white;
+	}
+	.navs li {
+		cursor: pointer;
+		font-size: small;
+	}
+	
+	.menuicon{
+		display: none;
+		width: 25px;
+		height: 25px;
+		float: right;
+	}
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		color: white;
+	}
+	.writing_section {
+		margin-top: 15%;
+		margin-bottom: 20%;
+	}
+	.writing_section h1 {
+		font-size: 700%;
+		
+	}
+	.hero_footer {
+		display: flex;
+		flex-direction: row;
+		gap: 12rem;
+		margin-bottom: 30px;
+	}
+	.writing_footerI{
+		display: flex;
+		flex-direction: row;
+		font-size: medium;
+	}
+	.writing_footerI img {
+		width: 40px;
+		height: 40px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.butcon {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		margin: auto;
+		position: relative;
+	}
+	.butcon button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		margin: auto;
+		color: white;
+	}
+	
+	.hero_f_div {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.popular_container {
+		background-color: rgba(30, 30, 30, 1);
+		padding: 20px;
+	}
+	.popular{
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		margin-right: 100px;
+		margin-left: 100px;
+		color: white;
+	}
+	.popular_text{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.popular_pics {
+		display: flex;
+		flex-direction: row;
+		gap: 3rem;
+	}
+	.popular_img {
+		margin: auto;
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+	.popularimg4{
+		width: 90%;
+		border-radius: 7px;
+		filter: brightness(40%);
+		box-shadow: 2px 3px wheat;
+	}
+	.popularimg3 {
+		width: 80%;
+		border-radius: 7px;
+		filter: brightness(40%);
+	}
+	.popularimg2 {
+		width: 65%;
+		border-radius: 7px;
+		filter: brightness(40%);
+	}
+	.popularimg1{
+		width: 70%;
+		border-radius: 7px;
+		filter: brightness(40%);
+	}
+	.popimg_text {
+		 
+		position: absolute;
+	  top: 85%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.discover_container {
+		padding: 20px;
+		background-image: linear-gradient(rgba(30, 30, 30, 1), rgba(30, 30, 30, 0.2)), url(discoverbg.jpg); 
+		background-position: center;
+		background-size: cover;
+		color: white;
+	} 
+	.discover {
+		display: flex;
+		flex-direction: column;
+		gap: 10rem;	
+		margin-top: 15%;
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+	.disctextandvid{
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+	}
+	.discover_text {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.discover_text h1 {
+		font-size: 400%;
+	}
+	.watch{
+		display: flex;
+		flex-direction: row;
+		
+	}
+	.playbutton {
+		width: 80px;
+	}
+	.watch div {
+		margin-top: auto;
+		margin-bottom: auto;
+		font-size: 125%;
+	}
+	.discover_text p {
+		font-size: medium;
+	}
+	.discover_video{
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		margin-top: auto;
+	}
+	.discover_footer{
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+		margin: auto;
+	}
+	.discover_social {
+		width: 5%;
+		margin: auto;
+	}	
+}
